@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — TravelCo</title>
+<style>
+
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Tahoma, sans-serif; }
+body { background:#fcfbf8; color:#2c2c2c; line-height:1.6; }
+a { text-decoration:none; color:inherit; }
+img { max-width:100%; display:block; }
+
+/* Header / Nav */
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0px 60px;
+background-color:#264e4e;
+}
+
+.logo{
+    width: 90px;
+    height: 90px;
+    margin-left: 0;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.nav{
+    margin-right: 0;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap:25px;
+}
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/* Hero */
+.hero { background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+        url('https://i.pinimg.com/1200x/36/ad/2d/36ad2d36b16f56b6a65c99b74de22868.jpg') center/cover;
+        color:#fff; text-align:center; padding:140px 20px; }
+.hero h1 { font-size:52px; margin-bottom:14px; }
+.hero h1 span { color:#9fd3d3; }
+.hero p { font-size:18px; max-width:700px; margin:0 auto 28px; }
+
+/* Buttons */
+.btn { display:inline-block; padding:12px 28px; background:teal; color:#fff; border:none;
+       border-radius:30px; font-size:15px; cursor:pointer; transition:.3s; font-weight:500; }
+.btn:hover { background:#3f7878; transform:translateY(-2px); }
+.btn-outline { background:transparent; border:2px solid #fff; color:#fff; }
+.btn-outline:hover { background:#fff; color:cadetblue; }
+
+/* Section wrapper */
+section { padding:70px 6%; }
+.section-title { text-align:center; font-size:34px; color:teal; margin-bottom:12px; }
+.section-sub { text-align:center; color:#666; margin-bottom:40px; max-width:680px; margin-left:auto; margin-right:auto; }
+
+/* Card grid */
+.grid { display:grid; gap:24px; }
+.grid-3 { grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); }
+.grid-4 { grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); }
+.card { background:#fff; border-radius:14px; overflow:hidden; box-shadow:0 4px 18px rgba(0,0,0,0.06);
+        transition:.3s; }
+.card:hover { transform:translateY(-6px); box-shadow:0 10px 28px rgba(0,0,0,0.12); }
+.card img { height:200px; width:100%; object-fit:cover; }
+.card-body { padding:20px; }
+.card-body h3 { color:teal; margin-bottom:8px; }
+.card-body p { color:#555; font-size:14px; margin-bottom:12px; }
+.price { color:teal; font-weight:700; font-size:18px; }
+
+/* Forms */
+form { max-width:600px; margin:0 auto; background:#fff; padding:36px; border-radius:14px;
+       box-shadow:0 6px 24px rgba(0,0,0,0.07); }
+.form-group { margin-bottom:18px; }
+.form-group label { display:block; font-weight:500; margin-bottom:6px; color:#333; }
+.form-group input, .form-group select, .form-group textarea {
+    width:100%; padding:11px 14px; border:1px solid #d8d8d8; border-radius:8px; font-size:14px; outline:none;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color:cadetblue; }
+.form-group textarea { min-height:120px; resize:vertical; }
+
+/* Footer */
+footer { background:#264e4e; color:#dcecec; padding:50px 6% 20px; margin-top:60px; }
+.footer-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:30px; }
+.footer-grid h4 { color:#fff; margin-bottom:14px; font-size:17px; }
+.footer-grid ul { list-style:none; }
+.footer-grid li { margin-bottom:8px; font-size:14px; }
+.footer-grid a:hover { color:#9fd3d3; }
+.footer-bottom { text-align:center; padding-top:24px; margin-top:30px; border-top:1px solid #3a6a6a;
+                 font-size:13px; color:#a8c8c8; }
+
+@media(max-width:700px){
+    .hero h1 { font-size:36px; }
+    .header { flex-direction:column; gap:12px; }
+}
+
+
+</style>
+</head>
+<body>
+
+<header>
+     <div class="header">
+        <div class="logo">
+        <img src="Logo.png" alt="Logo">
+        </div>
+        <div class="nav">
+        <nav class="nav"><ul>
+        <li><a href="homepage.html" class="">Home</a></li>
+        <li><a href="explore.html" class="">Explore</a></li>
+        <li><a href="about.html" class="">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="destinations.html" class="">Destinations</a></li>
+        <li><a href="packages.html" class="">Packages</a></li>
+        <li><a href="hotels.html" class="">Hotels</a></li>
+        <li><a href="blog.html" class="">Blog</a></li>
+        <li><a href="gallery.html" class="">Gallery</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+        <li><a href="faq.html" class="">FAQ</a></li>
+        <li><a href="booking.html" class="">Booking</a></li>
+        </ul>
+        </nav>
+        </div>
+
+     </div>
+    </header> 
+    
+
+<section class="hero" style="padding:90px 20px;">
+  <h1>Our <span>Services</span></h1>
+  <p>Everything you need for the perfect trip — all in one place.</p>
+</section>
+
+<section>
+  <h2 class="section-title">What We Offer</h2>
+  <div class="grid grid-3">
+    <div class="card card-body"><h3>Tour Packages</h3><p>Curated multi-day tours led by local experts.</p></div>
+    <div class="card card-body"><h3>Flight Booking</h3><p>Best deals on flights to any destination.</p></div>
+    <div class="card card-body"><h3>Hotel Reservations</h3><p>From budget stays to luxury resorts.</p></div>
+    <div class="card card-body"><h3>Car Rentals</h3><p>Reliable vehicles wherever you land.</p></div>
+    <div class="card card-body"><h3>Travel Insurance</h3><p>Stay protected throughout your trip.</p></div>
+    <div class="card card-body"><h3>Visa Assistance</h3><p>End-to-end visa application support.</p></div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>TravelCo</h4>
+      <p>Your gateway to the world's most beautiful destinations. Crafting unforgettable journeys since 2010.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="hotels.html">Hotels</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Email: hello@travelco.com</p>
+      <p>Phone: +1 (555) 123-4567</p>
+      <p>Address: 123 Ocean Drive, Miami</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 TravelCo. All rights reserved.</div>
+</footer>
+
+<script>
+
+</script>
+</body>
+</html>
